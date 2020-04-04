@@ -1,10 +1,51 @@
-<h1>Make your form here</h1>
-<form class="" action="index.html" method="post">
-  <label for="pirate_name">Pirate Name:</label>
-  <input id="pirate_name" type="text" name="pirate[name]" value="">
-  <label for="pirate_weight">Pirate Weight:</label>
-  <input id="pirate_weight" type="text" name="pirate[weight]" value="">
-  <label for="pirate_height">Pirate Height:</label>
-  <input id="pirate_height" type="text" name="pirate[height]" value="">
+<h2>Make your form here</h2>
 
-</form>
+<div class="row">
+  <div class="col-sm-6 offset-sm-3">
+    <form class="" action="/pirates" method="post">
+
+      <div class="form-group">
+        <label for="pirate_name">Pirate Name:</label>
+        <input class="form-control" id="pirate_name" type="text" name="pirate[name]" value="">
+      </div>
+      <div class="form-group">
+        <label for="pirate_weight">Pirate Weight:</label>
+        <input class="form-control" id="pirate_weight" type="text" name="pirate[weight]" value="">
+      </div>
+      <div class="form-group">
+        <label for="pirate_height">Pirate Height:</label>
+        <input class="form-control" id="pirate_height" type="text" name="pirate[height]" value="">
+      </div>
+      <hr>
+      <div class="form-group">
+        <label for="ship_name_1">Ship #1 Name:</label>
+        <input class="form-control" id="ship_name_1" type="text" name="pirate[ships][][name]" value="">
+      </div>
+      <div class="form-group">
+        <label for="ship_type_1">Ship #1 Type:</label>
+        <input class="form-control" id="ship_type_1" type="text" name="pirate[ships][][type]" value="">
+      </div>
+      <div class="form-group">
+        <label for="ship_booty_1">Ship #1 Booty:</label>
+        <input class="form-control" id="ship_booty_1" type="text" name="pirate[ships][][booty]" value="">
+      </div>
+      <hr>
+      <div class="form-group">
+        <label for="ship_name_2">Ship #2 Name:</label>
+        <input class="form-control" id="ship_name_2" type="text" name="pirate[ships][][name]" value="">
+      </div>
+      <div class="form-group">
+        <label for="ship_type_2">Ship #2 Type:</label>
+        <input class="form-control" id="ship_type_2" type="text" name="pirate[ships][][type]" value="">
+      </div>
+      <div class="form-group">
+        <label for="ship_booty_2">Ship #2 Booty:</label>
+        <input class="form-control" id="ship_booty_2" type="text" name="pirate[ships][][booty]" value="">
+      </div>
+
+      <input type="submit" class="btn btn-primary" name="Submit">
+
+    </form>
+  </div>
+
+</div>
