@@ -1,3 +1,5 @@
+require 'pry'
+
 class Ship
 
   attr_accessor :name, :type, :booty
@@ -11,6 +13,8 @@ class Ship
     save
   end
 
+
+
   def save
     self.class.all << self
   end
@@ -20,7 +24,8 @@ class Ship
   end
 
   def self.clear
-    self.class.all.clear
+    binding.pry
+    self.all.clear
   end
 
 end
