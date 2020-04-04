@@ -13,8 +13,6 @@ class Ship
     save
   end
 
-
-
   def save
     self.class.all << self
   end
@@ -24,7 +22,6 @@ class Ship
   end
 
   def self.clear
-    binding.pry
     self.all.clear
   end
 
